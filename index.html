@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Bootstrap</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav" style="padding-right: 7%;">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">HOME</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">PRODUCT</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">GALERY</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">BLOG</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">INVENTORY</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid" id="main_body"> 
+        <!-- Profile Bar-->
+        <div class="row justify-content-center">
+            <div class="content">
+                <div class="row align-items-start shadow-sm p-3 mb-3 bg-white rounded" id="profile">
+                    <div class="col" id="profpic">
+                        <div style="float: left;">
+                            <img class="rounded-circle" src="image/kura.jpg" width="150px" height="150px">
+                        </div>
+                        <div style="text-align: left; margin-left: 200px;">
+                            <h3 id="display_name">Udin Ganteng</h3>
+                            <h6 id="display_role">Frontend Developer</h6>
+                            <button class="btn btn-primary">Kontak</button>
+                            <button class="btn btn-outline-success">Resume</button>
+                        </div>
+                    </div>
+                    <div class="col" id="biodata">
+                        <table>
+                            <tr>
+                              <td><b>Availability</b></td>
+                              <td class="bio_data"><div id="display_avail">Full Time</div></td>
+                            </tr>
+                            <tr>
+                              <td><b>Usia</b></td>
+                              <td class="bio_data"><div id="display_age">19 Tahun</div></td>
+                            </tr>
+                            <tr>
+                              <td><b>Lokasi</b></td>
+                              <td class="bio_data"><div id="display_lokasi">Jakarta</div></td>
+                            </tr>
+                            <tr>
+                              <td><b>Pengalaman</b></td>
+                              <td class="bio_data"><div id="display_exp">2 Tahun</div></td>
+                            </tr>
+                            <tr>
+                              <td><b>Email</b></td>
+                              <td class="bio_data"><div id="display_email">Email@gmail.com</div></td>
+                            </tr>
+                          </table>
+                    </div>
+                </div>
+
+                <!-- Form bar-->
+                <div id="form" onsubmit="TampilkanData(event)">
+                    <div class="row align-items-start shadow-sm p-3 mb-5 bg-white rounded">
+                        <form>
+                            <label for="nama">Name</label> <br>
+                            <input type="text" name="nama" id="nama" class="form_group" required> <br>
+                            <label for="role">Role</label> <br>
+                            <input type="text" name="role" id="role" class="form_group" required> <br>
+                            <label for="availability">Availability</label> <br>
+                            <input type="text" name="availability" id="availability" class="form_group" required> <br>
+                            <label for="usia">Usia</label> <br>
+                            <input type="number" name="usia" id="usia" class="form_group" required> <br>
+                            <label for="lokasi">Lokasi</label> <br>
+                            <input type="text" name="lokasi" id="lokasi" class="form_group" required> <br>
+                            <label for="years_exp">Years Experience</label> <br>
+                            <input type="number" name="years_exp" id="years_exp" class="form_group" required> <br>
+                            <label for="email">Email</label> <br>
+                            <input type="email" name="email" id="email" class="form_group" required> <br><br>
+                            <input type="submit" value="Submit" class="form_group btn btn-success">
+                          </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

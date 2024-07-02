@@ -1,0 +1,40 @@
+#form{
+    margin-top: 25px;
+}
+
+#main_body{
+    max-width: 85%;
+}
+
+.form_group{
+    min-width: 100%;
+    margin-bottom: 10px;
+}
+
+body{
+    background-color: #f8f9fd !important;
+}
+
+.bg_data {
+    background-color: white;
+    border: 1px solid rgb(145, 144, 144);
+    padding: 20px;
+    margin: 20px 0;
+}
+
+label{
+    font-weight: bold;
+}
+
+.bio_data{
+    padding-left: 15px;
+}
+
+#profile{
+    margin-top: 35px;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
